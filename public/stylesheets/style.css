@@ -8,41 +8,26 @@
 
 html,
 body {
-  height: 100%;
   box-sizing: border-box;
   font-family: sans-serif;
-  color: rgba(37, 37, 43, 1);
-  background: #ece9e6;
-  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
-  background: linear-gradient(to right, #ffffff, #edeef0);
+  color: #ffffff;
+  background: #33cc33;
 }
 
-.image-container {
-  background-image: url('../images/GA-Linkedin-25.jpg');
-  background-size: 100%;
-  box-shadow: 80px 0 120px 0 #f5f6f7 inset, 0 50px 50px 0 #f2f3f4 inset, -25px 0 50px 0 #eff0f1 inset;
-  width: 35vw;
-  height: 45vw;
-  position: absolute;
-  right: 0vw;
-  bottom: 0vh;
+header {
+  height: 15vh;
+  margin: 4vh;
 }
 
-.wrapper {
-  width: 80%;
-  margin: 0 auto;
-  height: 100%;
-  position: relative;
+
+nav {
+  text-align: right;
 }
 
-.explain {
-  width: 50%;
-  /*margin-top: 100px;*/
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+nav span {
+  margin-right: 2.5em;
 }
+
 
 .link-icon {
   background-color: rgba(37, 37, 43, 1);
@@ -75,14 +60,29 @@ body {
 	src: url('./fonts/LiberationSans-Bold.ttf') format('truetype');
 }
 
-h1 {
-  font-family: 'liberation-sans bold', Arial, sans-serif;
-  font-size: 3em;
-  margin-bottom: .5em;
-}
 
 p {
   font-family: 'liberation-sans regular', Arial, sans-serif;
   font-size: 1.2em;
   margin-top: .5em;
+}
+
+.top {
+  height: 100vh
+}
+
+.front {
+  margin-top: 20vh;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'liberation-sans bold', Arial, sans-serif;
+  font-size: 5em;
+
+}
+
+h2 {
+  font-size: 1.25em;
+  margin-bottom: .75em;
 }

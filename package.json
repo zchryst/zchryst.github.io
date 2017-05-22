@@ -1,0 +1,29 @@
+{
+  "name": "zchryst.github.io",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zchryst/zchryst.github.io.git"
+  },
+  "author": "ZC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zchryst/zchryst.github.io/issues"
+  },
+  "homepage": "https://github.com/zchryst/zchryst.github.io#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "ejs-mate": "^2.3.0",
+    "express": "^4.15.3",
+    "request": "^2.81.0"
+  },
+  "keywords": []
+}
