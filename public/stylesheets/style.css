@@ -1,0 +1,151 @@
+
+/*img {
+  max-width: 500px;
+  -webkit-box-shadow: 0 0 50px black;
+  -moz-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+  box-shadow: 0 0 50px black;
+}*/
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  color: #ffffff;
+  background: #1e1e1e;
+}
+
+body,
+header {
+  -webkit-transition:  background-color 1s, color 1s;
+  transition: background-color 1s, color 1s;
+}
+
+
+header {
+  height: 10vh;
+  padding: 2em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+
+nav {
+  text-align: right;
+}
+
+nav span {
+  margin-right: 2.5em;
+  cursor: pointer;
+}
+
+
+.link-icon {
+  background-color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  margin: .5vw 1vw;
+  border-radius: 50%;
+  color: #1e1e1e;
+  line-height: 1.5em;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+
+@font-face{
+	font-family: 'liberation-sans regular';
+	src: url('./fonts/LiberationSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'liberation-sans bold';
+	src: url('./fonts/LiberationSans-Bold.ttf') format('truetype');
+}
+
+
+p {
+  font-family: 'liberation-sans bold', Arial, sans-serif;
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+.top {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+.contact {
+  text-align: center;
+  padding: 10vh 0;
+
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.front {
+  /*margin-top: 20vh;*/
+  text-align: center;
+}
+
+h1 {
+  font-family: 'liberation-sans bold', Arial, sans-serif;
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 1.25em;
+  margin-bottom: .75em;
+}
+
+.about {
+
+}
+
+.wrapper {
+  position:relative;
+  width:100%;
+  margin-top: 100vh;
+  z-index:2;
+}
+
+.about p {
+  font-size: 8em;
+}
+
+.work {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10vh;
+}
+
+.project {
+  display: inline-block;
+  margin: 5vh auto;
+  padding: 5em 3em;
+  background-color: #e6e6e6;
+}
+
+.work h1 {
+  margin-bottom: 5vh;
+}
+
+.work img {
+  width: 40vw;
+  box-shadow: -10px 10px 8px #8d8d8d;
+}
