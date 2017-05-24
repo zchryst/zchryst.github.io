@@ -29,12 +29,15 @@ header {
   padding: 2em;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 100;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav {
+  display: inline-block;
   text-align: right;
 }
 
@@ -147,4 +150,9 @@ h2 {
 .work img {
   width: 40vw;
   box-shadow: -10px 10px 8px #8d8d8d;
+}
+
+#name {
+  color: #1e1e1e;
+  cursor: default;
 }
