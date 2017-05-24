@@ -1,9 +1,18 @@
 
 const request = require('request');
 const express = require('express');
-const path = require('path'); // helps me build paths
+const path = require('path');
 var engine = require('ejs-mate');
 var app = express();
+
+const favicon = require('serve-favicon');
+
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
+const $ = require('jquery');
+
+// var functions = require('./public/javascript/functions.js');
+
 
 // where are the templates?
 app.set('views', path.join(__dirname, 'views'));
@@ -11,8 +20,10 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('ejs', engine);
 app.set('view engine', 'ejs');
 
+
 // use a middleware - midlewares are like functions
 // static asset
+app.use(favicon(__dirname + '/public/images/favicon.ico'));
 app.use( express.static(path.join(__dirname, 'public')) );
 app.use(logger);
 
