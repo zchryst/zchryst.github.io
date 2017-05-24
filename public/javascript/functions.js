@@ -3,7 +3,7 @@ $(document).ready(function() {
   var scrollHeight = 0;
   $(document).scroll(function() {
       scrollHeight = $(window).scrollTop();
-      if(scrollHeight >= $(window).height() * .4) {
+      if(scrollHeight >= $(window).height() * .25) {
         $('body').css({background: '#ffffff', color: '#000000'})
         $('.front').css({color: '#ffffff'})
         $('header').css({background: 'rgba(255, 255, 255, 0.95)', color: '#000000'})
