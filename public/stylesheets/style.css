@@ -10,6 +10,7 @@ html,
 body {
   box-sizing: border-box;
   font-family: sans-serif;
+  position: relative;
 }
 
 body {
@@ -74,7 +75,7 @@ nav span {
 
 
 p {
-  font-family: 'liberation-sans bold', Arial, sans-serif;
+  font-family: 'liberation-sans regular', Arial, sans-serif;
   font-size: 1.2em;
   margin: 1em 0;
 }
@@ -126,10 +127,11 @@ h2 {
 }
 
 .about article {
-  font-size: 8em;
+  font-size: 6em;
 }
 
 .work {
+  position: relative;
   width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -141,6 +143,7 @@ h2 {
   margin: 5vh auto;
   padding: 5em 3em;
   background-color: #e6e6e6;
+  position: relative;
 }
 
 .work h1 {
@@ -155,4 +158,42 @@ h2 {
 #name {
   color: #1e1e1e;
   cursor: default;
+}
+
+.project:hover .projectExplanation {
+  opacity: 1;
+}
+
+.projectExplanation {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(29, 28, 28, .6);
+  padding: 3rem;
+  color: #ffffff;
+
+  transition: opacity .5s;
+}
+
+.projectExplanation p {
+  line-height: 2rem;
+  font-weight: 200;
+  letter-spacing: 1pt;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: 1pt;
 }
