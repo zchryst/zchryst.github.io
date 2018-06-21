@@ -26,6 +26,7 @@ header {
 
 
 header {
+  letter-spacing: 1pt;
   height: 10vh;
   padding: 2em;
   position: fixed;
